@@ -1,28 +1,28 @@
 # I'm a fluffy fox!
-$n="\33[m";                   # normal
-$b="\033[48;5;33;38;5;240m";  # blue
-$l="\033[48;5;242;38;5;237m"; # lgrey
-$d="\033[48;5;235;38;5;240m"; # dgrey
-$w="\033[48;5;15;38;5;246m";  # white
-$o="\033[48;5;232;38;5;238m"; # nose
-$a="\033[48;5;250;38;5;234m"; # ears
-$e="\033[38;5;45m";           # eyes
+$norm =           "\33[m";
+$accent_blue =    "\033[038;5;237;048;5;033m";
+$body_lightgrey = "\033[038;5;237;048;5;243m";
+$body_darkgrey =  "\033[038;5;242;048;5;235m";
+$white =          "\033[038;5;246;048;5;254m";  # Tail tip
+$nose =           "\033[038;5;238;048;5;232m";  # Black nose
+$ears =           "\033[038;5;237;048;5;250m";  # Light grey in ears
+$eyes =           "\033[038;5;045m";  # Light blue eyes
 $the_cow = <<EOC;
          $thoughts
-          $thoughts      $b,-.$n      $b.-,$n
-           $thoughts     $b|$a-$d.$d\\$n __ $d/$d.$a-$b|$n
-            $thoughts    $d\\$a  $l`    `$a  $d/$n
-                  $l/_$d     _$l \\$n 
-                $l< $d \_`$e\q  p$n$d _ $l >$n
-                $l<$d.._=/  \\=_. $l>$n
-                   $l\{$d`\\$n$o\()$n$d/`$l}\`\\$n
-                   $d\{      }$l  \\$n
-                   $d|{    } $l   \\$n
-                   $l\\$d\{   }  \\$l.- \\$n
-                   $l|-$d;     $l/    \\$n
-                   $b|$d | | | $b| $l    ;$n
-                   $d| | |.;.,..$l\__ |$n
-                 .$w-""$n$b;`$d         `|$n
-                $w/    $ns$b| $d          /$n
-                `$w-..$ns$b/_$d\___,..---'$n`
+          $thoughts      $accent_blue,-.$norm      $accent_blue.-,$norm
+           $thoughts     $accent_blue|$ears-$body_darkgrey.$body_darkgrey\\$norm __ $body_darkgrey/$body_darkgrey.$ears-$accent_blue|$norm
+            $thoughts    $body_darkgrey\\$ears  $body_lightgrey`    `$ears  $body_darkgrey/$norm
+                  $body_lightgrey/_$body_darkgrey     _$body_lightgrey \\$norm
+                $body_lightgrey< $body_darkgrey \_`$eyes\q  p$norm$body_darkgrey _ $body_lightgrey >$norm
+                $body_lightgrey<$body_darkgrey.._=/  \\=_. $body_lightgrey>$norm
+                   $body_lightgrey\{$body_darkgrey`\\$norm$nose\()$norm$body_darkgrey/`$body_lightgrey}\`\\$norm
+                   $body_darkgrey\{      }$body_lightgrey  \\$norm
+                   $body_lightgrey|$body_darkgrey\{    }$body_lightgrey    \\$norm
+                   $body_lightgrey\\$body_darkgrey\{   }$body_lightgrey  \\.- \\$norm
+                   $body_lightgrey|$accent_blue-$body_darkgrey  .$accent_blue $body_lightgrey  $body_darkgrey/$accent_blue $body_lightgrey   \\$norm
+                   $accent_blue|$body_darkgrey | | $accent_blue|$body_darkgrey |$accent_blue  $body_lightgrey   ;$norm
+                   $body_darkgrey| | |.;.,.$accent_blue.\_\_$body_lightgrey |$norm
+                 .$white-""$norm$accent_blue;`$body_darkgrey         `|$norm
+                $white/    $norms$accent_blue| $body_darkgrey          /$norm
+                `$white-..$norms$accent_blue/_$body_darkgrey\___,..---'$norm`
 EOC
