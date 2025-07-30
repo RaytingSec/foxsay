@@ -1,28 +1,31 @@
 # I'm a fluffy fox!
-$norm =           "\33[m";
-$accent_blue =    "\033[038;5;237;048;5;033m";
-$body_lightgrey = "\033[038;5;237;048;5;243m";
-$body_darkgrey =  "\033[038;5;242;048;5;235m";
-$white =          "\033[038;5;246;048;5;254m";  # Tail tip
-$nose =           "\033[038;5;238;048;5;232m";  # Black nose
-$ears =           "\033[038;5;237;048;5;250m";  # Light grey in ears
-$eyes =           "\033[038;5;045m";  # Light blue eyes
+$norm       = "\33[m";
+$blue       = "\033[038;5;239;048;5;033m";   # Accents for ear tips, arms, tail
+$light_grey = "\033[038;5;237;048;5;243m";   # Body outer
+$dark_grey  = "\033[038;5;241;048;5;235m";   # Body inner
+$glasses    = "\033[038;5;248;048;5;235m";   # Dark grey with different font color
+$white      = "\033[038;5;240;048;5;254m";   # Tail tip
+
+$nose       = "\033[038;5;237;048;5;232m";   # Black nose
+$ears       = "\033[038;5;241;048;5;250m";   # Light grey in ears
+$eyes       = "\033[038;5;045m";             # Light blue eyes
+
 $the_cow = <<EOC;
-         $thoughts
-          $thoughts      $accent_blue,-.$norm      $accent_blue.-,$norm
-           $thoughts     $accent_blue|$ears-$body_darkgrey.$body_darkgrey\\$norm __ $body_darkgrey/$body_darkgrey.$ears-$accent_blue|$norm
-            $thoughts    $body_darkgrey\\$ears  $body_lightgrey`    `$ears  $body_darkgrey/$norm
-                  $body_lightgrey/_$body_darkgrey     _$body_lightgrey \\$norm
-                $body_lightgrey< $body_darkgrey \_`$eyes\q  p$norm$body_darkgrey _ $body_lightgrey >$norm
-                $body_lightgrey<$body_darkgrey.._=/  \\=_. $body_lightgrey>$norm
-                   $body_lightgrey\{$body_darkgrey`\\$norm$nose\()$norm$body_darkgrey/`$body_lightgrey}\`\\$norm
-                   $body_darkgrey\{      }$body_lightgrey  \\$norm
-                   $body_lightgrey|$body_darkgrey\{    }$body_lightgrey    \\$norm
-                   $body_lightgrey\\$body_darkgrey\{   }$body_lightgrey  \\.- \\$norm
-                   $body_lightgrey|$accent_blue-$body_darkgrey  .$accent_blue $body_lightgrey  $body_darkgrey/$accent_blue $body_lightgrey   \\$norm
-                   $accent_blue|$body_darkgrey | | $accent_blue|$body_darkgrey |$accent_blue  $body_lightgrey   ;$norm
-                   $body_darkgrey| | |.;.,.$accent_blue.\_\_$body_lightgrey |$norm
-                 .$white-""$norm$accent_blue;`$body_darkgrey         `|$norm
-                $white/    $norms$accent_blue| $body_darkgrey          /$norm
-                `$white-..$norms$accent_blue/_$body_darkgrey\___,..---'$norm`
+         ${thoughts}
+          ${thoughts}      ${blue},-.${norm}      ${blue}.-,${norm}
+           ${thoughts}     ${blue}|${ears}-${dark_grey}.${dark_grey}\\${norm} __ ${dark_grey}/${dark_grey}.${ears}-${blue}|${norm}
+            ${thoughts}    ${dark_grey}\\${ears} ;${light_grey}'    `${ears}: ${dark_grey}/${norm}
+                  ${light_grey}/ ${dark_grey}`_  _`${light_grey} \\${norm}
+                ${light_grey}<`${glasses}-[_${eyes}q${dark_grey}${glasses}][${eyes}p${glasses}_]-${light_grey}`>${norm}
+                ${light_grey}<${dark_grey}.._=/  \\=_. ${light_grey}>${norm}
+                   ${light_grey}{${dark_grey}`\\${norm}${nose}()${norm}${dark_grey}/`${light_grey}}`\\${norm}
+                   ${dark_grey}{      }${light_grey}  \\${norm}
+                   ${light_grey}|${dark_grey}{    }${light_grey}    \\${norm}
+                   ${light_grey}\\${dark_grey}{   }${light_grey}  \\.- \\${norm}
+                   ${light_grey}|${blue}-${dark_grey}  .${blue} ${light_grey}  ${dark_grey}/${blue} ${light_grey}   \\${norm}
+                   ${blue}|${dark_grey} | | ${blue}|${dark_grey} |${blue}  ${light_grey}   ;${norm}
+                   ${dark_grey}| | |.;.,.${blue}.__${light_grey} |${norm}
+                 .${white}-""${blue};`${dark_grey}          `\\${norm}
+                ${white}/    ${blue}| ${dark_grey}           /${norm}
+                `${white}-..${blue}/_${dark_grey}___,,..---'${norm}`
 EOC
