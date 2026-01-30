@@ -1,6 +1,4 @@
-##
-## Yiff! I'm a fox!
-##
+# I'm a fluffy fox!
 $n="\33[m";                   # normal
 $b="\033[48;5;33;38;5;240m";  # blue
 $l="\033[48;5;242;38;5;237m"; # lgrey
