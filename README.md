@@ -11,6 +11,18 @@ sudo cp $cowsay_file /usr/share/cowsay/cows/
 echo "Hello!" | cowsay -f $cowsay_file
 ```
 
+## Development
+
+Provides lower latency feedback, useful for viewing "live" updates of cow file
+
+```bash
+cowsay_file=./fox.cow
+while true; do
+    bash -c "echo \"\`date -Iseconds\`\" | cowsay -f ./${cowsay_file}";
+    sleep 1;
+done
+```
+
 ## Cowfiles
 
 ### Fox
