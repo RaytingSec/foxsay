@@ -3,7 +3,11 @@ Foxsay
 
 Fox cowfiles to extend your cowsay library of animals and friends to include foxes.
 
-## Usage
+
+Usage
+----------
+
+### Installing
 
 Install and test:
 ```bash
@@ -11,7 +15,7 @@ sudo cp $cowsay_file /usr/share/cowsay/cows/
 echo "Hello!" | cowsay -f $cowsay_file
 ```
 
-## Development
+### Development
 
 Provides lower latency feedback, useful for viewing "live" updates of cow file
 
@@ -23,7 +27,9 @@ while true; do
 done
 ```
 
-## Cowfiles
+
+Cowfiles
+----------
 
 ### Fox
 
